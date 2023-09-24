@@ -16,3 +16,5 @@ android/local.properties
 /reactNative/node_modules
 /package-lock.json
 /node_modules
+/.gradle
+/.idea
