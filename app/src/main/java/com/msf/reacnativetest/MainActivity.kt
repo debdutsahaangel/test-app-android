@@ -2,6 +2,7 @@ package com.msf.reacnativetest
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
 import com.msf.reacnativetest.delegate.IReactDelegate
@@ -20,6 +21,7 @@ class MainActivity: AppCompatActivity(), DefaultHardwareBackBtnHandler {
         reactNativeDelegate.loadApp(this) {
             setContentView(it)
         }
+        Log.d("SOME_TEST_LOGS", "Testing logs")
     }
 
     override fun onBackPressed() {
